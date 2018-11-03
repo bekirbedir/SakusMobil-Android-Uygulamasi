@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1079827614059",
+    "firebase_url": "https://sakusmobilapp.firebaseio.com",
+    "project_id": "sakusmobilapp",
+    "storage_bucket": "sakusmobilapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079827614059:android:d2983add266381e8",
+        "android_client_info": {
+          "package_name": "bekirbedir.sakusmobilapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079827614059-7v437f7ujkb0gph50v5nv4i5hcselfdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDokfbLDSQoFY80DoQzWsRfYPG1zlqH9Jc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

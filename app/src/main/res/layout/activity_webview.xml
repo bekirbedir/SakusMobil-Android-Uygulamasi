@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bekirbedir.sakusmobilapp.MainActivity">
+
+
+    <WebView
+        android:id="@+id/webviewClock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+    <Button
+        android:id="@+id/returnHomePage"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@mipmap/load_more_icon"
+        app:layout_constraintBottom_toTopOf="@+id/includeButton5"
+
+        />
+    <include
+        android:id="@+id/includeButton5"
+        android:layout_marginBottom="10dp"
+        layout="@layout/bus_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+</android.support.constraint.ConstraintLayout>

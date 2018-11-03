@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context="bekirbedir.sakusmobilapp.MapsActivity" />
+    <TextView
+        android:id="@+id/tvTopText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"
+        android:background="#0E1441"
+        android:gravity="center"
+        android:text="Sakus Mobil" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_below="@+id/tvTopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+       />
+
+    <include
+        android:id="@+id/include"
+        android:layout_marginBottom="10dp"
+        layout="@layout/bus_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnLoadMore" />
+
+    <include
+        android:id="@+id/include2"
+
+        layout="@layout/fav_bus_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:layout_toEndOf="@+id/btnFavorite"
+        android:layout_alignTop="@+id/btnFavorite" />
+
+    <Button
+        android:id="@+id/btnBusClock"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnFavorite"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ic_clock" />
+    <Button
+        android:id="@+id/btnFavorite"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/btnLoadMore"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/favorite_icon" />
+    <Button
+        android:id="@+id/btnLoadMore"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/load_more_icon" />
+
+
+</RelativeLayout>
